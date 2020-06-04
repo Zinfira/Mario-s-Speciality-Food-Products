@@ -27,6 +27,6 @@ describe "the add a product process" do
     click_link 'Chocolate Milk'
     click_link 'Add a review'
     click_on 'Create Review'
-    expect(page).to have_content " "
+    expect(page).to have_content "Author can't be blank"
   end
 end
