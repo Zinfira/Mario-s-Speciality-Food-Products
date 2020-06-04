@@ -28,4 +28,17 @@
   <p>There are no products yet.</p>
 <% end %>
 
+
+<h3>The product with the most reviews</h3>
+
+<% if @most_reviews.any? %>
+  <ul>
+    <% @most_reviews.each do |most| %>
+      <li><%= link_to most.name, product_path(most) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products with reviews yet.</p>
+<% end %>
+
 <p>If you would like to see all our products <%= link_to "click here", products_path %></p>
