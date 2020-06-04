@@ -32,7 +32,7 @@ Clone this repository via Terminal using the following commands:
 Next, confirm that you navigated to the Mario-s-Speciality-Food-Products project directory by entering ```pwd``` in Terminal.
 Then, run at the project's root directory via Terminal the following commands:
 * >$ bundle install
-* >$ rake db:database
+* >$ rake db:create
 * >$ rake db:migrate
 * >$ rake db:test:prepare
 * >$ rake db:seed

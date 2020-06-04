@@ -1,4 +1,4 @@
-<h1>Edit review:</h1>
+<h1>Edit review for <%= @product.name %>:</h1>
 
 <%= form_for [@product, @review] do |f| %>
   <%= f.label :author %>
@@ -9,3 +9,5 @@
   <%= f.number_field :rating %>
   <p><%= f.submit %></p>
 <% end %>
+
+<p><%= link_to "Return to product", product_path(@product) %></p>
