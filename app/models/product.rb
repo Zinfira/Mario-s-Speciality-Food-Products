@@ -5,6 +5,7 @@ class Product < ApplicationRecord
   validates :cost, presence: true
   before_save(:titleize_product)
   scope :made_in_the_usa, -> { where(country_of_origin: "Usa") }
+  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 
   private
     def titleize_product

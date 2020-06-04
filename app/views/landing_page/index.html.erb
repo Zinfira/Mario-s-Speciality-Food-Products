@@ -1,4 +1,4 @@
-<h1>Mario's Specialty Food Products</h1>
+<h1>Mario''s Specialty Food Products</h1>
 
 <h2>We are happy to see you in our website!</h2>
 <h3>We have food from all over the World.</h3>
@@ -13,6 +13,19 @@
   </ul>
 <% else %>
   <p>There are no products made in the USA yet.</p>
+<% end %>
+
+
+<h3>The three most recently added products:</h3>
+
+<% if @three_most_recent.any? %>
+  <ul>
+    <% @three_most_recent.each do |three| %>
+      <li><%= link_to three.name, product_path(three) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products yet.</p>
 <% end %>
 
 <p>If you would like to see all our products <%= link_to "click here", products_path %></p>
