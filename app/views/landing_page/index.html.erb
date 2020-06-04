@@ -3,4 +3,16 @@
 <h2>We are happy to see you in our website!</h2>
 <h3>We have food from all over the World.</h3>
 <br>
+<h3>Products made in the USA:</h3>
+
+<% if @made_in_the_usa.any? %>
+  <ul>
+    <% @made_in_the_usa.each do |usa| %>
+      <li><%= link_to usa.name, product_path(usa) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no products made in the USA yet.</p>
+<% end %>
+
 <p>If you would like to see all our products <%= link_to "click here", products_path %></p>
