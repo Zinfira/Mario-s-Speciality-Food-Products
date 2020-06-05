@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
-  before_action :authorized
+  before_action :authorize
+  before_action :admin_access, except: [:destroy, :edit]
   
   
 
