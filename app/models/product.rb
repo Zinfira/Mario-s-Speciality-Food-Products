@@ -13,7 +13,7 @@ class Product < ApplicationRecord
     .order("reviews_count DESC")
     .limit(10)
   )}
-
+  
   private
     def titleize_product
       self.name = self.name.titleize
