@@ -12,14 +12,17 @@ _This application creates products and reviews by user or seed them from a datab
 | Specs | Example Input | Example Output |
 |-------|---------------|----------------|
 | User is able to see list of products |  |  |
-| User is able to create a new product | Name: 'chocolate milk' Country of origin: 'united states' cost $: '3' and click to 'Create Product' link | "Products: 'Chocolate Milk' $3 'United States'|
-| User is able to update the product | Enter in the input forms Name: 'chocolate ice cream' country_of_origin: 'united states' cost $: '4' and click to 'update Product' button | "Products: 'Chocolate Ice Cream' $4 United States" |
-| User is able to delete the product | Click 'Delete' link | "Products: ' _There are no products yet._'" |
-| User is able to add reviews for the product | Author: 'Zinfira' content_body: "So tasty! It's my favorite flavor!" Rating: 5 | Product: 'Chocolate Ice Cream' Review by: 'Zinfira' Review: "So tasty! It's my favorite flavor!" Rating: 5 |
-| User is able to update reviews for the product | Author: 'Zinfira' content_body: "Disgusting!" Rating: 1 | Product: 'Chocolate Ice Cream' Review by: 'Zinfira' Review: "Disgusting!" Rating: 1 |
-| User is able to delete reviews | Click 'Delete' link | Product: 'Chocolate Ice Cream' _No reviews are listed for this product._|
+| Admin is able to create a new product | Name: 'chocolate milk' Country of origin: 'united states' cost $: '3' and click to 'Create Product' link | "Products: 'Chocolate Milk' $3 'United States'|
+| Admin is able to update the product | Enter in the input forms Name: 'chocolate ice cream' country_of_origin: 'united states' cost $: '4' and click to 'update Product' button | "Products: 'Chocolate Ice Cream' $4 United States" |
+| Admin is able to delete the product | Click 'Delete' link | "Products: ' _There are no products yet._'" |
+| Admin and User are able to add reviews for the product | Author: 'Zinfira' content_body: "So tasty! It's my favorite flavor!" Rating: 5 | Product: 'Chocolate Ice Cream' Review by: 'Zinfira' Review: "So tasty! It's my favorite flavor!" Rating: 5 |
+| Admin is able to update reviews for the product | Author: 'Zinfira' content_body: "Disgusting!" Rating: 1 | Product: 'Chocolate Ice Cream' Review by: 'Zinfira' Review: "Disgusting!" Rating: 1 |
+| Admin is able to delete reviews | Click 'Delete' link | Product: 'Chocolate Ice Cream' _No reviews are listed for this product._|
 | All fields for products should be filled out | Name: ' ' Cost $: ' ' Country of origin: ' '| 'Name can't be blank'  'Country of origin can't be blank'  'Cost can't be blank' |
 | Use a callback to titleize all products name and countries | Name: 'chocolate milk' Country of origin: 'united states' cost $: '3' | 'Chocolate Milk' $3 'United States' |
+| User is able to create acoount | Click 'Sign Up', fill out the form and click "Sign Up" button | You've successfully signed up! |
+| User is able to sign in | Click 'Sign in', fill out the form and click "Sign In" button | You've signed in. |
+| User is able to sign out | Click 'Sign out' | You've signed out. |
 
 ## Setup/Installation Requirements
 
