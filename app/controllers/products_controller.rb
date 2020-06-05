@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
 
+  before_action :authorized
+  
+  
+
   def index
     @products = Product.all
     render :index

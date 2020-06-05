@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+
+  before_action :authorized
   
   def new
     @product = Product.find(params[:product_id])
