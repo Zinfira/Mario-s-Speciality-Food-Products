@@ -46,7 +46,7 @@ Open the browser(Chrome) and input __localhost:3000__
 
 ## Known Bugs
 
-_Not known bugs at this time._
+_Started to get a weird authorization for admins. When a user bacome an admin, and try to sign, it gives an error, but starts to allow an admin to sign in without password._
 
 
 ## Support and contact details
