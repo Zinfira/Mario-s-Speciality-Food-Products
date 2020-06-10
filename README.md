@@ -23,6 +23,7 @@ _This application creates products and reviews by user or seed them from a datab
 | User is able to create acoount | Click 'Sign Up', fill out the form and click "Sign Up" button | You've successfully signed up! |
 | User is able to sign in | Click 'Sign in', fill out the form and click "Sign In" button | You've signed in. |
 | User is able to sign out | Click 'Sign out' | You've signed out. |
+| Admin is able to create account | Click 'Sign Up', fill out the form, click on checkbox "Checkbox for admins",  and click "Sign Up" button | You've successfully signed up! |
 
 ## Setup/Installation Requirements
 
@@ -46,7 +47,7 @@ Open the browser(Chrome) and input __localhost:3000__
 
 ## Known Bugs
 
-_Started to get a weird authorization for admins. When a user bacome an admin, and try to sign, it gives an error, but starts to allow an admin to sign in without password._
+_Not known bugs at this time._
 
 
 ## Support and contact details
