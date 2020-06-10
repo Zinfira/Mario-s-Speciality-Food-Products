@@ -10,7 +10,7 @@ describe "the add a product process" do
     click_on 'Log in'
   end
 
-  it "adds a new product" do
+  it "adds a new review" do
     visit products_path
     click_link 'Create new product'
     fill_in 'Name', :with => 'chocolate milk'
@@ -26,7 +26,7 @@ describe "the add a product process" do
     expect(page).to have_content 'Zinfira'
   end
 
-  it "gives an error when no name is entered" do
+  it "gives an error when no author is entered" do
     visit products_path
     click_link 'Create new product'
     fill_in 'Name', :with => 'chocolate milk'
