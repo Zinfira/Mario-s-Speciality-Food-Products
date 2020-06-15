@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.destroy_all
 Review.destroy_all
+User.destroy_all
 
 50.times do |index|
   @product = Product.create!(name: Faker::Food.ingredient, 

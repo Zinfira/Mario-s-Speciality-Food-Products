@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "the add a product process" do
   before :each do
-    admin = User.create(:email => 'test2@test.com', :password => '123456')
+    admin = User.create(:email => 'test2@test.com', :password => '123456', :admin => true)
     visit '/signin'
     fill_in 'Email', :with => 'test2@test.com'
     fill_in 'Password', :with => '123456'
